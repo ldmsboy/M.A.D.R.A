@@ -1,0 +1,37 @@
+:root{
+	--bg:#0f1724; /* dark navy */
+	--panel:#0b1220;
+	--muted:#9aa6bf;
+	--accent:#4f46e5;
+	--accent-2:#06b6d4;
+	--surface:#0b1220;
+	--card:#0f1724;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial; margin:0; background:linear-gradient(180deg,#07102a 0%, #071031 100%); color:#e6eef8}
+.topbar{background:linear-gradient(90deg,var(--accent),#2563eb); padding:18px}
+.topbar-inner{max-width:1200px;margin:0 auto}
+.topbar h1{margin:0;font-size:20px}
+.topbar .subtitle{margin:2px 0 0;font-size:12px;opacity:.9}
+.app-grid{display:grid;grid-template-columns:300px 1fr;gap:16px;max-width:1200px;margin:20px auto;padding:0 16px}
+.sidebar{padding:8px}
+.panel{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:12px}
+.panel{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:12px;-webkit-backdrop-filter: blur(6px);backdrop-filter: blur(6px)}
+label{display:block;margin-bottom:8px}
+input[type=text]{width:100%;padding:8px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit}
+.btn-primary{display:inline-block;padding:8px 12px;border-radius:8px;border:none;background:linear-gradient(90deg,var(--accent),#2563eb);color:white;cursor:pointer;box-shadow:0 6px 18px rgba(37,99,235,0.12)}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed}
+.result{margin-top:8px;font-weight:600;color:var(--accent-2)}
+.canvas{padding:8px}
+#network{width:100%;height:720px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.spinner{display:inline-block;margin-left:8px;width:12px;height:12px;border:2px solid rgba(255,255,255,0.18);border-top-color:white;border-radius:50%;animation:spin 0.8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.lists{display:flex;gap:12px}
+.lists ul{max-height:240px;overflow:auto;padding-left:16px}
+.legend{margin-top:8px;color:var(--muted);display:flex;gap:12px;align-items:center}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;box-shadow:0 2px 8px rgba(0,0,0,0.4)}
+.dot.route{background:#ffcc00}
+.dot.critical{background:#00ff88}
+.tiny{margin-left:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);padding:4px 6px;border-radius:6px;color:var(--muted);cursor:pointer}
+.tiny:hover{color:white;border-color:rgba(255,255,255,0.06)}
+

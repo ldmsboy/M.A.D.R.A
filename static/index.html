@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M.A.D.R.A. — Motor de Análisis de Ruta de Ataque</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css" />
+    <!-- vis-network CDN -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <h1>M.A.D.R.A.</h1>
+        <p class="subtitle">Motor de Análisis de Dependencia y Ruta de Ataque</p>
+      </div>
+    </header>
+
+    <main class="app-grid">
+      <aside class="sidebar">
+        <section class="panel">
+          <h3>Control</h3>
+          <label>Origen
+            <input id="start" type="text" placeholder="A1" list="nodes-list" />
+          </label>
+          <label>Destino
+            <input id="end" type="text" placeholder="A8" list="nodes-list" />
+          </label>
+          <datalist id="nodes-list"></datalist>
+          <button id="analyze" disabled class="btn-primary">Analizar Ruta</button>
+          <div id="result" class="result"></div>
+        </section>
+
+        <section class="panel" id="details">
+          <h3>Datos del Grafo</h3>
+          <div class="lists">
+            <div>
+              <h4>Nodos</h4>
+              <ul id="node-list"></ul>
+            </div>
+            <div>
+              <h4>Aristas</h4>
+              <ul id="edge-list"></ul>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="canvas">
+        <div id="network"></div>
+        <div class="legend">
+          <span class="legend-item"><span class="dot route"></span> Ruta</span>
+          <span class="legend-item"><span class="dot critical"></span> Crítico (peso &lt; 4)</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/main.js"></script>
+  </body>
+</html>
