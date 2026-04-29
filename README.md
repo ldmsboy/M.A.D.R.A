@@ -1,5 +1,13 @@
 # M.A.D.R.A. — Motor de Análisis de Dependencia y Ruta de Ataque
 
+<br>
+<a href="https://www.linkedin.com/in/ldmsboy"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://peerlist.io/ldmsboy"><img src="https://img.shields.io/badge/Peerlist-00CA51?style=for-the-badge&logo=peerlist&logoColor=white" alt="Peerlist"></a>
+<a href="https://x.com/LuisDaniel38815"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+<a href="https://www.instagram.com/ldmsboy/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
+<a href="https://www.facebook.com/ldmsboy/"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"></a>
+<br><br>
+
 Proyecto de ejemplo que modela una red de activos de ciberseguridad como un grafo dirigido ponderado y encuentra la ruta de explotación de menor costo usando Dijkstra.
 
 Estructura minimal:
